@@ -1,11 +1,9 @@
 const { compile } = require('json-schema-to-typescript')
 const camelcase = require('camelcase')
 const fs = require('fs')
-const defaultCustomMapper = require('./defaultCustomMapper')
 
 const path = 'src/typings/generated/components-schema.ts'
-const componentsJson = require('./components.139739') // dev
-// const componentsJson = require('./components.136007') // live
+const componentsJson = require('./components.151451')
 
 const customTypeParser = require('./generate-ts-schema-custom-types')
 const titleSuffix = '_storyblok'
@@ -79,7 +77,6 @@ function typeMapper(schema = {}, title) {
     const schemaElement = schema[key]
     const type = schemaElement.type
     if (type === 'custom') {
-      Object.assign(parseObj, defaultCustomMapper(key, schemaElement))
       Object.assign(parseObj, customTypeParser(key, schemaElement))
       return
     } else if (type === 'multilink') {

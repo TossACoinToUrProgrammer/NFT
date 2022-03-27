@@ -5,7 +5,7 @@ import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   if (router.isFallback) {
-    return <div>...laoding</div>
+    return <div>...loading</div>
   }
   return (
     <div>

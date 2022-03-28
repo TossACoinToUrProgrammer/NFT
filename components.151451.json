@@ -24,6 +24,98 @@
       "icon": null
     },
     {
+      "name": "footer_nav_list",
+      "display_name": null,
+      "created_at": "2022-03-28T11:16:18.747Z",
+      "updated_at": "2022-03-28T11:17:51.835Z",
+      "id": 2308211,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 1,
+          "maximum": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "nav_item"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "footer_nav_list",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": " global",
+      "display_name": null,
+      "created_at": "2022-03-28T11:10:14.595Z",
+      "updated_at": "2022-03-28T11:19:22.886Z",
+      "id": 2308204,
+      "schema": {
+        "header_nav": {
+          "type": "bloks",
+          "maximum": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "nav_item"
+          ]
+        },
+        "header_logo": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ]
+        },
+        "header_search_text": {
+          "type": "text"
+        },
+        "footer_logo": {
+          "type": "asset",
+          "filetypes": []
+        },
+        "footer_text": {
+          "type": "text"
+        },
+        "footer_nav": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "footer_nav_list"
+          ]
+        },
+        "footer_social": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "nav_item"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": " global",
+      "component_group_uuid": "399ab9a3-5412-44ef-b37b-f82330d05db6",
+      "color": null,
+      "icon": null,
+      "component_group_name": "global"
+    },
+    {
       "name": "grid",
       "display_name": null,
       "created_at": "2022-03-23T12:55:24.805Z",
@@ -42,6 +134,39 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "grid",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "nav_item",
+      "display_name": null,
+      "created_at": "2022-03-28T11:15:20.170Z",
+      "updated_at": "2022-03-28T11:19:11.447Z",
+      "id": 2308209,
+      "schema": {
+        "link": {
+          "type": "multilink",
+          "use_uuid": true
+        },
+        "title": {
+          "type": "text"
+        },
+        "icon": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "nav_item",
       "component_group_uuid": null,
       "color": null,
       "icon": null

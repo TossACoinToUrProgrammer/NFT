@@ -36,3 +36,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+#components.*.json
+app-content*.json
+#presets.*.json
+
+__generated__

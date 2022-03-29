@@ -25,11 +25,12 @@ const getPageProps = async (slug: string | string[], options: PagePropsOptions):
   const pageProps = page?.content as PageStoryblok | undefined
   const settingsProps = settings?.content as GlobalStoryblok | undefined
 
-  if (!settingsProps) {
-    console.log('settings is missing!', slug, pageSlug)
-  } else if (!pageProps) {
+  if (!pageProps) {
     console.log('page missing', slug, pageSlug)
   }
+  if (!settingsProps) {
+    console.log('settings is missing!', slug, pageSlug)
+  } 
 
   const pageSettingsProps = {
     page: pageProps ? { ...pageProps, uuid: page.uuid, name: page.name, full_slug: page.full_slug } : null,

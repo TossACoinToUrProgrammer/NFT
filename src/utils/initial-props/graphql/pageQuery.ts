@@ -13,15 +13,21 @@ export const PAGE_QUERY = gql`
         body
       }
     }
-    GlobalItem(id: "settings") {
+    GlobalItem(id: "globalsettings") {
       uuid
       content {
         _uid
         header_nav
         footer_nav
-        header_logo
+        header_logo {
+          filename
+          alt
+        }
         header_search_text
-        footer_logo
+        footer_logo {
+          filename
+          alt
+        }
         footer_text
         footer_nav
         footer_social
